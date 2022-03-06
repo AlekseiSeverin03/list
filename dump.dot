@@ -1,0 +1,46 @@
+digraph List
+{
+	rankdir = LR;
+	{
+		rankdir = LR;
+		node [shape = record, style = filled];
+		head [label = "HEAD | 2", fillcolor = "green"];
+		tail [label = "TAIL | 3", fillcolor = "green"];
+		size [label = "SIZE | 2", fillcolor = "green"];
+		free [label = "FREE | 1", fillcolor = "green"];
+	}
+node [shape = record, style = filled];
+0 [label = "index: 0 | { prev\n 0 | data\n 2 | next\n3 } ", fillcolor = "lightgrey"];
+1 [label = "index: 1 | { prev\n 333 | data\n -4 | next\n0 } ", fillcolor = "lightgrey"];
+2 [label = "index: 2 | { prev\n 11 | data\n 3 | next\n0 } ", fillcolor = "lightgrey"];
+3 [label = "index: 3 | { prev\n 12 | data\n 0 | next\n2 } ", fillcolor = "lightgrey"];
+4 [label = "index: 4 | { prev\n 333 | data\n -5 | next\n-1 } ", fillcolor = "lightgrey"];
+5 [label = "index: 5 | { prev\n 333 | data\n -6 | next\n-4 } ", fillcolor = "lightgrey"];
+6 [label = "index: 6 | { prev\n 333 | data\n -7 | next\n-5 } ", fillcolor = "lightgrey"];
+7 [label = "index: 7 | { prev\n 333 | data\n -8 | next\n-6 } ", fillcolor = "lightgrey"];
+8 [label = "index: 8 | { prev\n 333 | data\n -9 | next\n-7 } ", fillcolor = "lightgrey"];
+9 [label = "index: 9 | { prev\n 333 | data\n -10 | next\n-8 } ", fillcolor = "lightgrey"];
+10 [label = "index: 10 | { prev\n 333 | data\n -11 | next\n-9 } ", fillcolor = "lightgrey"];
+	0->2 [color = "red", frontcolor = "lightgrey", label = ""];
+	0->3 [color = "grey", frontcolor = "lightgrey", label = ""];
+	1->4 [color = "red", frontcolor = "lightgrey", label = ""];
+	1->0 [color = "grey", frontcolor = "lightgrey", label = ""];
+	2->3 [color = "red", frontcolor = "lightgrey", label = ""];
+	2->0 [color = "grey", frontcolor = "lightgrey", label = ""];
+	3->0 [color = "red", frontcolor = "lightgrey", label = ""];
+	3->2 [color = "grey", frontcolor = "lightgrey", label = ""];
+	4->5 [color = "red", frontcolor = "lightgrey", label = ""];
+	4->1 [color = "grey", frontcolor = "lightgrey", label = ""];
+	5->6 [color = "red", frontcolor = "lightgrey", label = ""];
+	5->4 [color = "grey", frontcolor = "lightgrey", label = ""];
+	6->7 [color = "red", frontcolor = "lightgrey", label = ""];
+	6->5 [color = "grey", frontcolor = "lightgrey", label = ""];
+	7->8 [color = "red", frontcolor = "lightgrey", label = ""];
+	7->6 [color = "grey", frontcolor = "lightgrey", label = ""];
+	8->9 [color = "red", frontcolor = "lightgrey", label = ""];
+	8->7 [color = "grey", frontcolor = "lightgrey", label = ""];
+	9->10 [color = "red", frontcolor = "lightgrey", label = ""];
+	9->8 [color = "grey", frontcolor = "lightgrey", label = ""];
+	10->11 [color = "red", frontcolor = "lightgrey", label = ""];
+	10->9 [color = "grey", frontcolor = "lightgrey", label = ""];
+}
